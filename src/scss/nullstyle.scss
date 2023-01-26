@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
+
+$wrapperColor : rgb(187, 220, 235);
+// $containerWidth : 1230px;
+
+
+
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+  color: inherit;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  height: 100%;
+  font-size: 16px;
+}
+
+html{
+  height: 100%;
+  font-size: 16px;
+}
+
+.wrapper{
+  height: 100%;
+}
+
+.container{
+  height: 100%;
+}
+
+body{
+  line-height: 1;
+  font-family: Poppins; //найчастіший шрифт
+  color: #ffffff; //те чого найбільше
+}
+.container{
+  // max-width: $containerWidth;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  //background: url(/img/gitara.jpg) right top/ 48% auto no-repeat fixed;
+}
+
+[class*="__container"]{
+// max-width: $containerWidth;
+// margin: 0 auto;
+// padding: 0 30px;
+}
+
+main{
+flex: 1 0 auto;
+}
+
+%none-copy{// does not allow to copy text and does not appear dotted mouse;  
+  -moz-user-select: none; 
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+  -o-user-select: none; 
+  user-select: none;
+}
+
+

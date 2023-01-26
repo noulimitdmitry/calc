@@ -1,0 +1,45 @@
+@import "nullstyle";
+@import "fonts";
+@import "icons";
+@import "header";
+@import "main";
+@import "footer";
+
+  // %perspective{
+  //   perspective: 400px;
+  //   perspective-origin: center;
+  //   background-color: #fff;
+  // }
+
+.wrapper{
+  position: relative;
+}
+
+.container{
+  position: relative;
+  z-index: 1;
+}
+
+.header{
+  &__container {
+  }
+}
+
+.back-ground-image {
+  background: url("/img/fon.jpg") center / cover no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.9;
+}
+
+@media(max-width:767px){
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
